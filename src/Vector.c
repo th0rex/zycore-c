@@ -253,6 +253,7 @@ ZyanStatus ZyanVectorDestroy(ZyanVector* vector, ZyanMemberProcedure destructor)
             vector->element_size, vector->capacity));
     }
 
+    vector->data = ZYAN_NULL;
     return ZYAN_STATUS_SUCCESS;
 }
 
